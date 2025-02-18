@@ -9,7 +9,7 @@ Package containing supplementary code for the paper "Statistical Learning For DC
 
 - Distributions
 - JuMP
-- MathProgBase
+- MathProgBase (MathOptInterface)[https://github.com/jump-dev/MathOptInterface.jl]
 - PowerModels
 - ProgressMeter
 - Clp
