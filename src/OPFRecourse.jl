@@ -1,6 +1,6 @@
 module OPFRecourse
     
-    using JuMP, MathProgBase, PowerModels, Distributions, ProgressMeter
+    using JuMP, MathOptInterface, PowerModels, Distributions, ProgressMeter
 
     export  SingleScenarioOPF, NetworkReference, OPFScenarios,
             BasisRecourse, EnsembleRecourse, get_opf_solution
