@@ -47,7 +47,8 @@ function NetworkReference(ref::Dict{Symbol,Any};
         σscaling::Float64 = 0.05
     )
     function generateindices(d::Dict)
-        originalindices = sort(collect(keys(d))); nindices = length(originalindices)
+        originalindices = sort(collect(keys(d)))
+        nindices = length(originalindices)
         reverseindices = Dict(zip(originalindices,1:nindices))
         nindices, originalindices, reverseindices
     end
