@@ -9,7 +9,7 @@ Package containing supplementary code for the paper "Statistical Learning For DC
 
 - Distributions
 - JuMP
-- MathProgBase [MathOptInterface](https://github.com/jump-dev/MathOptInterface.jl)
+- MathProgBase
 - PowerModels
 - ProgressMeter
 - Clp
@@ -26,7 +26,7 @@ We begin by importing the relevant packages, and getting the location of a matpo
 ```julia
 using OPFRecourse, JuMP, Clp
 
-data_file = string(Pkg.dir(),"/OPFRecourse/test/data/nesta_case30_ieee.m")
+data_file = string(Pkg.dir(),"/OPFRecourse/test/data/pglib_opf_case30_ieee.m")
 ```
 
 ### NetworkReference
