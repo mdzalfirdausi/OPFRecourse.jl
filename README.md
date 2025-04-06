@@ -24,7 +24,7 @@ To test if it is successfully installed, run `Pkg.test("OPFRecourse")` in a Juli
 
 We begin by importing the relevant packages, and getting the location of a matpower file, e.g.
 ```julia
-using OPFRecourse, JuMP, Clp
+using OPFRecourse, JuMP, Clp, MathProgBase
 
 data_file = string(Pkg.dir(),"/OPFRecourse/test/data/pglib_opf_case30_ieee.m")
 ```
