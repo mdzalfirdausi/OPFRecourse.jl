@@ -1,5 +1,5 @@
 mutable struct OPFScenarios
-    noptimal::Int
+    notoptimal::Int
     ref::NetworkReference
     scenarios::Matrix{Float64} # nscenarios x nuncertain
     solutions::Matrix{Float64} # nscenarios x ngens
@@ -61,7 +61,7 @@ function OPFScenarios(
         push!(whichscenario[basiskey], i)
     end
 
-    OPFScenarios(noptimal, ref, sample_ω, sample_p, colbases, rowbases, whichbasis, whichscenario)
+    OPFScenarios(nsamples-noptimal, ref, sample_ω, sample_p, colbases, rowbases, whichbasis, whichscenario)
 end
 
 
