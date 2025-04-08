@@ -52,7 +52,7 @@ m = OPFRecourse.SingleScenarioOPF(ref, Clp.ClpSolver());
 The `ref::NetworkReference` also contains the distributional information for generating scenarios of forecast deviations. In additional, we identify the optimal bases for for each scenario by solving single-scenario OPFs, and store them all within an `OPFScenarios` object:
 
 ```
-@time scenarios = OPFRecourse.OPFScenarios(ref, m, nsamples = 1000);
+@time scenarios = OPFRecourse.OPFScenarios(ref, m, nsamples = 5000);
 ```
 
 The set of all unique column bases can be accessed using `scenarios.cbases`, and the set of all unique column bases can be accessed using `scenarios.rbases` respectively. These correspond to the power generation values and line flow constraints respectively, and contain information about system configurations (provided by `scenarios.whichbasis`) in which a subset of them are set to be active. Read the paper for more details.
