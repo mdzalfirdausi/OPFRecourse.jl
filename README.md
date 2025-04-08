@@ -33,7 +33,7 @@ data_file = string(Pkg.dir(),"/OPFRecourse/test/data/pglib_opf_case30_ieee.m")
 This package provides a `NetworkReference` object that uses [PowerModels](https://github.com/lanl-ansi/PowerModels.jl) to parse the matpower file, before pulling out the relevant information for the DC-OPF problem. To construct it, run
 
 ```julia
-ref = OPFRecourse.NetworkReference(data_file, bus_prob = 0.95, line_prob = 0.95, σscaling = 0.05);
+ref = OPFRecourse.NetworkReference(data_file, bus_prob = 0.95, line_prob = 0.95, σscaling = 0.03);
 ```
 where optional parameters (i.e. `bus_prob`, `line_prob` and `σscaling`) can be passed in for the Chance Constraint OPF.
 
