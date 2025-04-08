@@ -58,6 +58,10 @@ number of optimal feasible scenario
 ```
 length(scenarios.scenarios)/ref.nbus 
 ```
+write the  model to .lp file
+```
+writeLP(m.model,"jul.lp";genericnames=false)
+```
 
 The set of all unique column bases can be accessed using `scenarios.cbases`, and the set of all unique column bases can be accessed using `scenarios.rbases` respectively. These correspond to the power generation values and line flow constraints respectively, and contain information about system configurations (provided by `scenarios.whichbasis`) in which a subset of them are set to be active. Read the paper for more details.
 
