@@ -54,6 +54,10 @@ The `ref::NetworkReference` also contains the distributional information for gen
 ```
 @time scenarios = OPFRecourse.OPFScenarios(ref, m, nsamples = 5000);
 ```
+number of optimal feasible scenario
+```
+length(scenarios.scenarios)/ref.nbus 
+```
 
 The set of all unique column bases can be accessed using `scenarios.cbases`, and the set of all unique column bases can be accessed using `scenarios.rbases` respectively. These correspond to the power generation values and line flow constraints respectively, and contain information about system configurations (provided by `scenarios.whichbasis`) in which a subset of them are set to be active. Read the paper for more details.
 
