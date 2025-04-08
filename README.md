@@ -43,6 +43,8 @@ To construct and solve the DC OPF model, run the following code:
 
 ```julia
 m = OPFRecourse.SingleScenarioOPF(ref, Clp.ClpSolver());
+```
+```julia
 @time JuMP.solve(m.model)
 ```
 
