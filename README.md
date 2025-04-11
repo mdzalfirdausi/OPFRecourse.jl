@@ -69,7 +69,7 @@ The set of all unique column bases can be accessed using `scenarios.cbases`, and
 `SingleScenarioOPF` implements a `get_opf_solution(model, scenario)` method that computes the power generation plan for the given `scenario`. So the following code
 
 ```julia
-get_opf_solution(m, scenarios.scenarios[1,:])
+get_opf_solution(m, scenarios.scenarios[:,1])
 ```
 
 would get the power generation plans corresponding to the first scenario.
