@@ -33,7 +33,7 @@ function BasisRecourse(ref::NetworkReference, m::SingleScenarioOPF, cbasis, rbas
     c = 0
     for i in 1:(2*ref.nline + 1)
         terms = m.model.linconstr[i].terms
-        if rbasis[i] !== :Basic
+        if rbasis[i] !== :Basic # in gurobipy, possible values only -1 and 0
             c += 1
             rhs = if rbasis[i] == :NonbasicAtLower || rbasis[i] == :Fixed
                 m.model.linconstr[i].lb
