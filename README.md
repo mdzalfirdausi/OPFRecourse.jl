@@ -27,7 +27,7 @@ We begin by importing the relevant packages, and getting the location of a matpo
 using OPFRecourse, JuMP, Clp
 ```
 ```julia
-data_file = string(Pkg.dir(),"/OPFRecourse/test/data/pglib_opf_case73_ieee_rts.m")
+data_file = string(Pkg.dir(),"/OPFRecourse/test/data/pglib_opf_case300_ieee.m")
 ```
 
 ### NetworkReference
